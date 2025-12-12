@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>عرض intro.pdf</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>عرض ملف PDF</h1>
+      <p class="sub">الملف: <strong>intro.pdf</strong></p>
+    </div>
+
+    <div class="actions">
+      <!-- فتح في نافذة جديدة -->
+      <a class="btn" href="intro.pdf" target="_blank" rel="noopener">افتح في تاب جديد</a>
+      <!-- تحميل -->
+      <a class="btn ghost" href="intro.pdf" download>تحميل</a>
+    </div>
+  </header>
+
+  <main class="viewer-wrap">
+    <!-- أفضل عنصر لعرض PDF مع فولو باك -->
+    <object class="pdf-viewer" data="intro.pdf" type="application/pdf" aria-label="PDF viewer">
+      <!-- لو المتصفح مش بيدعم العرض داخل الصفحة -->
+      <div class="fallback">
+        <p>لا يدعم متصفحك عرض ملفات PDF داخل الصفحة.</p>
+        <p><a href="intro.pdf" target="_blank" rel="noopener">اضغط هنا لفتح الملف في تاب جديد</a> أو <a href="intro.pdf" download>حمله</a>.</p>
+      </div>
+    </object>
+  </main>
+
+  <footer class="footer-note">
+    <small>لو الملف كبير أو المتصفح منع العرض داخل الصفحة جرب "افتح في تاب جديد".</small>
+  </footer>
+</body>
+</html>
